@@ -1,3 +1,4 @@
+![Uploading python code runner architecture.svg…]()
 # Secure Python Code Runner
 
 The Secure Python Code Runner is an interactive, real-time Python execution environment built with Node.js and Docker. It provides a cloud IDE interface for writing, executing, and interacting with untrusted Python code inside ephemeral, resource-constrained containers.
@@ -10,7 +11,8 @@ The Secure Python Code Runner is an interactive, real-time Python execution envi
 
 ## System Architecture
 
-[Insert Architecture Flow Diagram]
+[Insert Architect<img width="4443" height="2395" alt="python code runner architecture" src="https://github.com/user-attachments/assets/9af12a52-763f-4dd2-ac8b-88017fb21f00" />
+ure Flow Diagram]
 
 The application relies on a decoupled, stream-based architecture divided into three components:
 
