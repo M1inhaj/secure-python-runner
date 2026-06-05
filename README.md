@@ -39,7 +39,8 @@ The system executes user-submitted code in an isolated environment to protect th
 * **Standard I/O Piping:** Supports interactive Python functions (e.g., `input()`) by piping keystrokes from the browser terminal directly into the Docker container's `stdin`.
 ## System Demonstrations
 
-[Demonstration 1 - Real-time error parsing and Problems tab catching a syntax error]
+[Demonstration 1 - Real-time error parsing and Problems tab catching a syntax error]<img width="800" height="742" alt="ezgif-60c663d6d82f1842" src="https://github.com/user-attachments/assets/806795e4-5880-4c8f-bc3f-805cb92887c3" />
+
 
 [Demonstration 2 - Security validation showing the terminal blocking a Botnet network request]<img width="800" height="742" alt="ezgif-60c663d6d82f1842" src="https://github.com/user-attachments/assets/3dd5e7c1-c0cc-4e95-a614-40f4c54af223" />
 
@@ -55,7 +56,7 @@ Execute the following commands in the terminal to initialize the application:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/secure-python-runner.git](https://github.com/yourusername/secure-python-runner.git)
+   git clone https://github.com/M1inhaj/secure-python-runner.git
    cd secure-python-runner
    ```
 2. Install dependencies:
