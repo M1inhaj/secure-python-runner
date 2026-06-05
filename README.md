@@ -3,12 +3,6 @@
 
 The Secure Python Code Runner is an interactive, real-time Python execution environment built with Node.js and Docker. It provides a cloud IDE interface for writing, executing, and interacting with untrusted Python code inside ephemeral, resource-constrained containers.
 
-## System Demonstrations
-
-[Demonstration 1 - Real-time error parsing and Problems tab catching a syntax error]
-
-[Demonstration 2 - Security validation showing the terminal blocking a Botnet network request]<img width="800" height="742" alt="ezgif-60c663d6d82f1842" src="https://github.com/user-attachments/assets/3dd5e7c1-c0cc-4e95-a614-40f4c54af223" />
-
 ## System Architecture
 
 <img width="4443" height="2395" alt="python code runner architecture" src="https://github.com/user-attachments/assets/9af12a52-763f-4dd2-ac8b-88017fb21f00" />
@@ -43,6 +37,11 @@ The system executes user-submitted code in an isolated environment to protect th
 ### Real-Time Interactive Terminal
 * **WebSocket Streaming:** Uses Socket.io for persistent, two-way communication.
 * **Standard I/O Piping:** Supports interactive Python functions (e.g., `input()`) by piping keystrokes from the browser terminal directly into the Docker container's `stdin`.
+## System Demonstrations
+
+[Demonstration 1 - Real-time error parsing and Problems tab catching a syntax error]
+
+[Demonstration 2 - Security validation showing the terminal blocking a Botnet network request]<img width="800" height="742" alt="ezgif-60c663d6d82f1842" src="https://github.com/user-attachments/assets/3dd5e7c1-c0cc-4e95-a614-40f4c54af223" />
 
 ## Local Setup and Installation
 
