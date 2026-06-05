@@ -11,8 +11,7 @@ The Secure Python Code Runner is an interactive, real-time Python execution envi
 
 ## System Architecture
 
-[Insert Architect<img width="4443" height="2395" alt="python code runner architecture" src="https://github.com/user-attachments/assets/9af12a52-763f-4dd2-ac8b-88017fb21f00" />
-ure Flow Diagram]
+<img width="4443" height="2395" alt="python code runner architecture" src="https://github.com/user-attachments/assets/9af12a52-763f-4dd2-ac8b-88017fb21f00" />
 
 The application relies on a decoupled, stream-based architecture divided into three components:
 
