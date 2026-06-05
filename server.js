@@ -10,7 +10,7 @@ const server = http.createServer(app);
 // Attach Socket.io to that server
 const io = new Server(server);
 
-app.use(express.static('public'));
+app.use(express.static('frontend'));
 
 // Listen for WebSockets connecting from the browser
 io.on('connection', (socket) => {

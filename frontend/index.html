@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Code Runner</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-navbar">
+      <a href="/" class="logo-link">
+        <img
+          src="https://s3.brilliant.com.bd/blog-bucket/thumbnail/8c5225dc-da97-48ab-9736-37d815e14439.png"
+          alt="Poridhi.io Logo"
+          class="brand-logo"
+        />
+      </a>
+    </header>
+
+    <div class="container">
+      <h1>Python Code Runner</h1>
+
+      <div class="card" id="editor-card">
+        <div class="card-header">
+          <div class="tabs-container" id="tabs-container"></div>
+          <div class="lang-label">Python</div>
+        </div>
+
+        <div id="editor-container"></div>
+
+        <div class="card-footer">
+          <div id="cursor-pos">Ln 1, Col 1</div>
+          <div class="footer-icons">
+            <i
+              class="fas fa-expand"
+              onclick="toggleFullScreen()"
+              title="Full Screen"
+            ></i>
+            <i class="fas fa-undo" onclick="editorUndo()" title="Undo"></i>
+            <i class="fas fa-redo" onclick="editorRedo()" title="Redo"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-bar">
+        <button class="btn-run" onclick="runCode()">
+          Run <i class="far fa-play-circle"></i>
+        </button>
+        <button class="btn-dark" onclick="clearTerminal()">
+          <i class="far fa-trash-alt"></i> Clear Terminal
+        </button>
+        <button class="btn-dark" onclick="newTab()">
+          <i class="fas fa-plus"></i> New Tab
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="bottom-tabs">
+          <div
+            class="bottom-tab active"
+            id="tab-terminal"
+            onclick="switchBottomTab('terminal')"
+          >
+            TERMINAL
+          </div>
+          <div
+            class="bottom-tab"
+            id="tab-problems"
+            onclick="switchBottomTab('problems')"
+          >
+            PROBLEMS <span class="badge" id="problem-badge">0</span>
+          </div>
+        </div>
+
+        <div
+          id="terminal-box"
+          onclick="document.getElementById('terminal-input').focus()"
+        >
+          <span id="terminal-output"></span
+          ><input type="text" id="terminal-input" autocomplete="off" disabled />
+        </div>
+
+        <div id="problems-box">
+          <div id="problems-list" style="color: #888; font-style: italic">
+            No problems have been detected.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

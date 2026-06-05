@@ -1,0 +1,290 @@
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0 0 40px 0;
+  color: #333;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: purple;
+}
+
+.card {
+  background-color: #1e1e24;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.top-navbar {
+  width: 100%;
+  background-color: #ffffff; /* Pure white background */
+  padding: 12px 30px; /* Space inside the header */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns the logo to the left */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Adds a very subtle shadow below the header */
+  box-sizing: border-box; /* Ensures padding doesn't push it off-screen */
+
+  /* Ensure it stays at the very top */
+  position: top;
+  top: 0;
+  left: 0;
+}
+
+.brand-logo {
+  height: 35px; /* Adjust this to make the logo larger or smaller */
+  width: auto; /* Keeps the aspect ratio intact */
+  display: block;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f5f7; /* Assuming your app background is off-white */
+}
+
+.card-header {
+  background-color: #191a21;
+  padding: 15px 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #111;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 2px;
+}
+
+.tab {
+  background-color: #282a36;
+  padding: 8px 15px;
+  border-radius: 8px 8px 0 0;
+  color: #888;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tab.active {
+  background-color: #1e1e24;
+  color: #f8f8f2;
+}
+.tab:hover:not(.active) {
+  background-color: #343746;
+  color: #ddd;
+}
+
+/* NEW: Style for the close button on the tab */
+.tab-close {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #666;
+  border-radius: 50%;
+  padding: 2px 4px;
+}
+.tab-close:hover {
+  color: #ef4444;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lang-label {
+  color: #888;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+#editor-container {
+  width: 100%;
+  height: 350px;
+}
+
+.card-footer {
+  background-color: #282a36;
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #888;
+  font-size: 12px;
+  border-top: 1px solid #111;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.footer-icons i:hover {
+  color: #fff;
+}
+
+#editor-card:fullscreen {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  padding: 0;
+  background-color: #1e1e24;
+}
+#editor-card:fullscreen #editor-container {
+  flex-grow: 1;
+  height: auto;
+}
+
+.action-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+.btn-run {
+  background-color: #10b981;
+  color: white;
+}
+.btn-run:hover {
+  background-color: #059669;
+}
+.btn-dark {
+  background-color: #1e1e24;
+  color: white;
+}
+.btn-dark:hover {
+  background-color: #282a36;
+}
+
+.terminal-header {
+  color: #888;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #333;
+}
+#terminal-box {
+  padding: 15px;
+  height: 250px;
+  overflow-y: auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  cursor: text;
+  color: #e0e0e0;
+}
+
+/* RESTORED: Raw terminal output styling */
+#terminal-output {
+  white-space: pre-wrap;
+}
+#terminal-input {
+  background: transparent;
+  border: none;
+  color: #10b981;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  width: 50%;
+  padding: 0;
+}
+
+/* --- NEW BOTTOM TABS & PROBLEMS CSS --- */
+.bottom-tabs {
+  display: flex;
+  border-bottom: 1px solid #111;
+  background-color: #191a21;
+}
+.bottom-tab {
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #888;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+.bottom-tab.active {
+  background-color: #1e1e24;
+  color: #e0e0e0;
+  border-top: 2px solid #10b981;
+}
+.bottom-tab:hover:not(.active) {
+  color: #ccc;
+}
+
+.badge {
+  background-color: #ef4444;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 10px;
+  display: none;
+}
+.badge.show {
+  display: inline-block;
+}
+
+#problems-box {
+  padding: 15px;
+  height: 250px;
+  overflow-y: auto;
+  display: none;
+  color: #e0e0e0;
+}
+
+/* Styles for the actual error items */
+.problem-file {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.problem-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #282a36;
+  border-radius: 4px;
+  border-left: 3px solid #ef4444;
+  font-size: 13px;
+}
+.problem-msg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.problem-loc {
+  color: #888;
+}
